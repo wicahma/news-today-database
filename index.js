@@ -34,16 +34,16 @@ app.use(mainRoute, userRouter);
 app.use(mainRoute, videoRouter);
 app.use(mainRoute, komentarRouter);
 
-// app.use((error, req, res, next) => {
-//   const data = error.data;
-//   const status = error.status || 500;
-//   const message = error.message;
-//   res.status(status).json({
-//     message: message,
-//     data: data,
-//   });
-//   next();
-// });
+app.use((error, req, res, next) => {
+  const data = error.data;
+  const status = error.status || 500;
+  const message = error.message;
+  res.status(status).json({
+    message: message,
+    data: data,
+  });
+  next();
+});
 
 const deleteFile = (filePath) => {
   fs.unlink(filePath, () => {
@@ -80,3 +80,5 @@ mongoose
     console.log(err);
     process.exit(1);
   });
+
+export default server;
