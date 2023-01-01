@@ -64,9 +64,8 @@ mongoose.set("strictQuery", false);
 mongoose
   .connect(process.env.MONGO_URL)
   .then(() => {
-    const port = process.env.PORT;
+    const port = process.env.PORT || 5000;
     app.listen(port, () => {
-      // console.log(process.env)
       console.log("Database connected Succesfully");
       console.log(`listening on port ${port}`);
     });
