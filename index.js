@@ -6,14 +6,17 @@ import dotenv from "dotenv";
 dotenv.config();
 const app = express();
 
-
 import { router as userRouter } from "./src/routes/userRoute.js";
 import { router as videoRouter } from "./src/routes/videoRoute.js";
 import { router as komentarRouter } from "./src/routes/komentarRoute.js";
 
 app.use(
   cors({
-    origin: "https://news-today-three.vercel.app",
+    origin: [
+      "https://news-today-three.vercel.app",
+      "https://news-today-diama.vercel.app",
+    ],
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   })
 );
 

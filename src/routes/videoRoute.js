@@ -21,7 +21,7 @@ router.delete("/video/:id", deleteOneVideo);
 router.post(
   "/uploadFile",
   cors({
-    origin: "https://news-today-three.vercel.app",
+    origin: "*",
   }),
   multer.single("file"),
   uploadToDatabase
