@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "news-today-372217",
+  "private_key_id": "5ebaf8c7dacd725fc002e69e372ea1f7ee4a3da5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDRvcBcxAHI1Haz\nyiKsdXP50Ne8CaqjBPah9pSNdQh3jB2rmnbev3ID/gKTNHiq1E0GXYG5/P5I/atL\nrKuSp91H1WlagA4YrA+FPuSkyEUGLccN96fJDKfWxplpVuRoeXuaJNOjDib03lTr\nw+cAgG0HByYA6SvxjP3po+7ZFIjBed2MViJkHa+nDCMiCSA5+HEF3pfm+njSp2QW\nrPBzssOJbgIfBSR0s8gDNSagKlVv5gLK6ruxFKb+tTCAAJbduhoOnu0ZsfYvJfId\nqyJMZRFw9KoQdCwBSZraFO+onfBVSlP6qHzDJ1k/OJdK4RaBav++sLxG2xEX8IT8\nKvQk66U5AgMBAAECggEAX5fBrCYDgDJhlYjbq8luXd4S7Vdkh58z/1aAl0ZPYRkh\nzrv8UIJl5y7moovoMUfIgU2t2gRWKxM+dqOQoStT3bEFLuOtSQ5mln63O+kxGGNV\n1WZZ+PaFKozij9G0EW/I51TAhpDlLXaFstzbFG30Ax99cS3UwudVNJ7sNdE3kSH0\nHHMQPYRy8rntOntM0aW1YPWDvtOPPfl7guhaIx7cMD5CieUjwE/Xj/kVhUBNNP9h\nRRihtZvGYvHDE+edRQzjCQ+THHt7CvujVpGPAETA+d6rbnM17dFXTj7Alva6vXSy\nHVfFj/8DHDHgSchei5YlGRrCC7fFi7Qra6xbEl6LXwKBgQDqhhabYw+CJQ5/YRsD\nKyRC/zR5m4XqCCV3iO9WmR9cfGPJXNKHWRp8C/Bnymi16EuP0HYU2kawLDHi141i\n7XccqVRceUzt3ZRqiFFkRROhfgp05lSUbgB6zGlrMVHo0eSh4uxojNYoh2/A4ZMD\netWEWZUzlnmJVtpxmR7Gs7ey9wKBgQDk8rBCYxfQ0tnwbECQhY6tGMm6s4aSl4GS\noJ90Fm7YodOFiYBmPB+d008r8dKFPs7cRdkSLOezpfLfA6PES9iPJvx6AhlQr1eh\n4oVxejJLOzcgWYsciz1kFyptoczbV8/a4UPeSbC9KJUfYm4UFr8YVWlljdAedLP7\n5Wz56eotTwKBgGrr/SyUykJEkMqERCN6rMqavZrfy/r6AdLwrGWn5ANvdrMcTaOF\nfSym6ND5GCovIRwNJ3i0V1wEmi3Ypk4/A3oevSZ36xnbVsoHIkx7rcqHw06uoEsX\np8JUpY9IahaicwFXiv7TjuPlc47ViQgiHWx8xyhA52I1Jdx6uexPjWXbAoGAersO\necgdMDiX1CZzxgWSooAzQ/6RGWxWbX/lepm7+i1l8qPvTN7WJAju3CPaMsukoLhg\n0Tl5S/id5adR1xzBjpvbpJwTbglQ9Ns1pctXwrSPrKvTww1xb4JroDGoW70LE87G\nTxc5w21J43UkhWhcMHM4+NO4yVrOUS5/6MjYXEkCgYAC2/BqHgvOaxLQt/BTqJUB\nVP8C1PjinAcDWsXp1pLxxBcvb4LUoOB9qFpBC7FH7Z6Gopmp1HXf4QqgNkC/VWDq\nPQglgeOPBkyFt3KZ4Muk59tfFuufKXjDsFj93YtmTABzGrqRaO+Z6MtYsNvmA6PW\nXP5trwSYEDDvRvcULB/WQw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "newstoday-database@news-today-372217.iam.gserviceaccount.com",
+  "client_id": "103653509248644742517",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/newstoday-database%40news-today-372217.iam.gserviceaccount.com"
+}
