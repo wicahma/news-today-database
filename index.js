@@ -71,7 +71,7 @@ mongoose
   .connect(process.env.MONGO_URL)
   .then(() => {
     console.log("Database connected Succesfully");
-    server.listen(port, () => {
+    app.listen(port, () => {
       console.log(`listening on port ${port}`);
     });
   })
@@ -81,4 +81,4 @@ mongoose
     process.exit(1);
   });
 
-export default server;
+export default app;
