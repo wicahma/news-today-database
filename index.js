@@ -2,6 +2,7 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import express from "express";
 import cors from "cors";
+import http from "http";
 import dotenv from "dotenv";
 dotenv.config();
 const app = express();
@@ -19,11 +20,15 @@ import { multer } from "./src/middlewares/multerFileHandler.js";
 
 const mainRoute = "/api";
 app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
     origin: "*",
   })
 );
+
+const server = http.createServer(app);
+const port = process.env.PORT || 5000;
 
 app.use(mainRoute, userRouter);
 app.use(mainRoute, videoRouter);
@@ -65,13 +70,13 @@ mongoose.set("strictQuery", false);
 mongoose
   .connect(process.env.MONGO_URL)
   .then(() => {
-    const port = process.env.PORT || 5000;
-    app.listen(port, () => {
-      console.log("Database connected Succesfully");
+    console.log("Database connected Succesfully");
+    server.listen(port, () => {
       console.log(`listening on port ${port}`);
     });
   })
   .catch((err) => {
     console.log("F*ck errror :)");
     console.log(err);
+    process.exit(1);
   });
