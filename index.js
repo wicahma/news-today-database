@@ -17,6 +17,7 @@ import {
 } from "./src/services/googleDriveServices.js";
 import { multer } from "./src/middlewares/multerFileHandler.js";
 
+const mainRoute = "/api";
 app.use(bodyParser.json());
 app.use(
   cors({
@@ -24,9 +25,9 @@ app.use(
   })
 );
 
-app.use(process.env.MAIN_ROUTE, userRouter);
-app.use(process.env.MAIN_ROUTE, videoRouter);
-app.use(process.env.MAIN_ROUTE, komentarRouter);
+app.use(mainRoute, userRouter);
+app.use(mainRoute, videoRouter);
+app.use(mainRoute, komentarRouter);
 
 app.use((error, req, res, next) => {
   const data = error.data;
