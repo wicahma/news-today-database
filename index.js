@@ -14,7 +14,6 @@ import { router as komentarRouter } from "./src/routes/komentarRoute.js";
 
 const mainRoute = "/api";
 app.use(bodyParser.json());
-app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
     origin: "*",
