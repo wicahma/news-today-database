@@ -11,14 +11,14 @@ import { router as userRouter } from "./src/routes/userRoute.js";
 import { router as videoRouter } from "./src/routes/videoRoute.js";
 import { router as komentarRouter } from "./src/routes/komentarRoute.js";
 
+app.use(
+  cors({
+    origin: "https://news-today-three.vercel.app",
+  })
+);
 
 const mainRoute = "/api";
 app.use(bodyParser.json());
-app.use(
-  cors({
-    origin: "*",
-  })
-);
 
 const port = process.env.PORT || 5000;
 
