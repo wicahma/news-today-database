@@ -1,5 +1,10 @@
 import video from "../models/videoModel.js";
 import user from "../models/userModel.js";
+import {
+  authenticateGoogle,
+  uploadToGoogleDrive,
+} from "../services/googleDriveServices.js";
+import fs from "fs";
 
 // done
 export const getAllVideo = (req, res, next) => {
@@ -18,6 +23,27 @@ export const getAllVideo = (req, res, next) => {
       error.status = 500;
       next(error);
     });
+};
+
+const deleteFile = (filePath) => {
+  fs.unlink(filePath, () => {
+    console.log("file deleted");
+  });
+};
+
+export const uploadToDatabase = async (req, res, next) => {
+  try {
+    if (!req.file) {
+      res.status(400).send("No file uploaded.");
+      return;
+    }
+    const auth = authenticateGoogle();
+    const response = await uploadToGoogleDrive(req.file, auth);
+    deleteFile(req.file.path);
+    res.status(200).json({ response });
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 export const createVideo = (req, res, next) => {
