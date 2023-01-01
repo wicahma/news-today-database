@@ -17,6 +17,6 @@ router.get("/video/sort/", getNewest);
 router.get("/video/:id", getOneVideo);
 router.post("/video", createVideo);
 router.delete("/video/:id", deleteOneVideo);
-router.post("/upload-file", multer.single("file"), uploadToDatabase);
+router.post("/uploadFile", multer.single("file"), uploadToDatabase);
 
 export { router };
